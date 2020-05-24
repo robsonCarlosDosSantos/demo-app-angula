@@ -11,7 +11,7 @@
           <input class="form-control" type="text" name="pesquisa" placeholder="Pesquise por ofertas..."
           #pesquisa (keyup)="buscaOferta(pesquisa.value)">
           <ul class="list-group" style="position: absolute;">
-            <li class="list-group-item" *ngFor="let oferta of ofertas2">{{ oferta.descricaoOferta }}</li>
+            <li class="list-group-item" *ngFor="let oferta of ofertas2">{{ oferta.descricaoOferta | descricaoReduzida }}</li>
           </ul>
         </div>
         <div class="col-md-2">
