@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { OfertasService } from '../../ofertas.service';
 
 @Component({
   selector: 'app-onde-fica',
   templateUrl: './onde-fica.component.html',
   styleUrls: ['./onde-fica.component.css'],
-  providers: [ OfertasService ]
+  providers: [OfertasService]
 })
 export class OndeFicaComponent implements OnInit {
 
@@ -15,9 +15,10 @@ export class OndeFicaComponent implements OnInit {
   constructor(private router: ActivatedRoute, private service: OfertasService) { }
 
   ngOnInit(): void {
-    const id = this.router.parent.snapshot.params['id'];
-    this.service.getInfoOndeFicaPorId(id).then( descricao => {
+    this.router.parent.params.subscribe((params: Params) => {
+      this.service.getInfoOndeFicaPorId(params.id).then(descricao => {
         this.descricao = descricao;
+      });
     });
   }
 
