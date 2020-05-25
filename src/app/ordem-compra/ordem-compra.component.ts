@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { OrdemCompraService } from '../ordem-compra.service'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { OrdemCompraService } from '../ordem-compra.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-ordem-compra',
@@ -9,12 +10,14 @@ import { OrdemCompraService } from '../ordem-compra.service'
 })
 export class OrdemCompraComponent implements OnInit {
 
+  @ViewChild('formulario') public dadosForm: NgForm;
+
   constructor(private ordemCompraService: OrdemCompraService) { }
 
   ngOnInit() {
   }
 
-  public confirmaPedido(formulario: any): void {
-    console.log(formulario.value);
+  public confirmaPedido(): void {
+    console.log(this.dadosForm.value);
   }
 }
