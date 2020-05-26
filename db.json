@@ -237,6 +237,78 @@
       "complemento": "Senho da hora - Matousinhos",
       "tipoPagamento": "dinheiro",
       "id": 8
+    },
+    {
+      "endereco": "cxcz",
+      "numero": "czcz",
+      "complemento": "czcz",
+      "tipoPagamento": "dinheiro",
+      "id": 9
+    },
+    {
+      "endereco": "Rua trinta e sete",
+      "numero": "237",
+      "complemento": "Maranguape II - Paulista - PE",
+      "tipoPagamento": "debito",
+      "id": 10
+    },
+    {
+      "endereco": "fdfsd",
+      "numero": "2313",
+      "complemento": "ffdsfdsf",
+      "tipoPagamento": "dinheiro",
+      "itensCarrinho": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "titulo": "Super Burger",
+          "descricaoOferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 1
+        },
+        {
+          "id": 2,
+          "img": {
+            "url": "/assets/ofertas/2/img1.jpg"
+          },
+          "titulo": "Cozinha Mexicana",
+          "descricaoOferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 2
+        },
+        {
+          "id": 4,
+          "img": {
+            "url": "/assets/ofertas/4/img1.jpg"
+          },
+          "titulo": "Estância das águas",
+          "descricaoOferta": "Diversão garantida com piscinas, trilhas e muito mais.",
+          "valor": 31.9,
+          "quantidade": 3
+        }
+      ],
+      "id": 11
+    },
+    {
+      "endereco": "testes",
+      "numero": "222",
+      "complemento": "teste teste",
+      "tipoPagamento": "dinheiro",
+      "itensCarrinho": [
+        {
+          "id": 1,
+          "img": {
+            "url": "/assets/ofertas/1/img1.jpg"
+          },
+          "titulo": "Super Burger",
+          "descricaoOferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 5
+        }
+      ],
+      "id": 12
     }
   ]
 }

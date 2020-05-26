@@ -7,6 +7,7 @@ import localePTBR from '@angular/common/locales/pt';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ROUTES } from './app.routes';
+import { CarrinhoService } from './carrinho.service';
 
 import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
@@ -44,7 +45,7 @@ registerLocaleData(localePTBR, 'pt');
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [{provide: LOCALE_ID, useValue: 'pt-Br' }],
+  providers: [ CarrinhoService, {provide: LOCALE_ID, useValue: 'pt-Br' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
