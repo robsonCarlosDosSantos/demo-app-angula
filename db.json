@@ -230,6 +230,13 @@
       "endereco": "rua trinta e sete",
       "numero": "237",
       "id": 7
+    },
+    {
+      "endereco": "Rua Companhia dos Caolinos",
+      "numero": "80, 2FRT",
+      "complemento": "Senho da hora - Matousinhos",
+      "tipoPagamento": "dinheiro",
+      "id": 8
     }
   ]
 }
