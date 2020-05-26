@@ -18,6 +18,6 @@ export class OrdemCompraComponent implements OnInit {
   }
 
   public confirmaPedido(): void {
-    console.log(this.dadosForm.value);
+    console.log(this.dadosForm);
   }
 }
