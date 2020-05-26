@@ -220,6 +220,16 @@
       "complemento": "Centro - Itapissuma",
       "tipoPagamento": "debito",
       "id": 5
+    },
+    {
+      "endereco": "rua sao joao",
+      "numero": "24",
+      "id": 6
+    },
+    {
+      "endereco": "rua trinta e sete",
+      "numero": "237",
+      "id": 7
     }
   ]
 }
